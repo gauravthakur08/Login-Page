@@ -2,8 +2,7 @@
 import axios from "axios";
 import { Mail, Lock, User, Eye, EyeOff, ArrowRight } from "lucide-react";
 
-const API_BASE = "http://localhost:3000/api/auth"; // change port if yours differs
-
+ const API_BASE = import.meta.env.VITE_API_URL;
 // Palette (ledger / passbook theme)
 const paper = "#F3ECDA";
 const paperDark = "#EBE1C9";
